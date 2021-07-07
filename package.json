@@ -2,7 +2,7 @@
   "name": "backgroundsliderjs",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://lhussein11.github.io/FilterStoreProject-100ProjectsChallenge/",
+  "homepage": "https://lhussein11.github.io/FilterProject-100ProjectsChallenge/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
