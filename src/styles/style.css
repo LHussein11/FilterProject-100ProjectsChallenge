@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder;
+}
+
+
+/*
+1. Header
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 76px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px;
+    margin: 10px 0 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+    width: 165px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: #0c1b33;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.cartcontact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    font-size: 24px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #0c1c36;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color: rgb(173, 216, 230);
+}
+
+/*
+1.2 Logos & Icons
+*/
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+#cartLogo {
+    font-size: 20px;
+}
+
+#cartLogo:hover {
+    color: rgb(255, 255, 255);
+}
+
+.phoneIcon {
+    font-size: 30px;
+}
+
+/*
+Hero Area - Image - Text - Button
+*/
+
+.heroArea {
+    background-image: linear-gradient(rgba(12, 28, 54, 0.5), rgba(12, 28, 54, 0.5)), url("../images/photo-1441986300917-64674bd600d8.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: calc(100vh - 76px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 .bigTextFirst {
+    color: rgb(250, 250, 250);
+}
+
+h1 .bigTextSecond {
+    color: rgb(173, 216, 230);
+    font-size: 2em;
+}
+
+.exploreBtn {
+    font-size: 2em;
+    width: 150px;
+    position: relative;
+    left: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255, 0.00001);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(173, 216, 230);
+}
+
+
+/*
+About Area - Image - Text - Button
+*/
+
+.aboutArea {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnAbout {
+    width: 90px;
+    font-size: 1.2em;
+    padding: 2px;
+    margin: 20px 0 0 0;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.aboutImage img {
+    height: 405px;
+    width: 540px;
+    position: absolute;
+    bottom: -623px;
+    right: 150px;
+    z-index: 1;
+}
+
+
+.aboutUs {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.frame {
+    border: 0.5em solid #0c1b33;
+    height: 420px;
+    width: 555px;
+    z-index: -1;
+}
+
+
+.aboutText {
+    color: #6c757d;
+    margin: 20px 0 0 0;
+}
+
+.aboutFirst {
+    font-size: 40px;
+}
+
+.aboutSecond {
+    font-size: 64px;
+    color: #0c1b33;
+}
+
+/*
+Store Area - Image - Text - Button
+*/
+
+.storeArea {
+    background-color: #eeeeee ;
+}
+
+.storeFirst {
+    font-size: 40px;
+}
+
+.storeSecond {
+    font-size: 64px;
+    color: #0c1b33;
+}
+
+.storeBigText {
+    margin: 40px 0 0 0;
+}
+
+.storeBtns {
+    margin: 15px 0 0 0;
+}
+
+.searchArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+Search bar
+*/
+
+.searchContainer {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.btnAll, 
+.btnShirts, 
+.btnPants, 
+.btnJackets, 
+.btnShoes {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px 15px 3px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+} 
+
+.storeBtns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.searchLogo {
+    background-color: #0c1b33;
+    height: 35px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchLogo span {
+    color: rgb(252, 252, 252);
+    border: 5px;
+}
+
+.searchInput {
+    height: 35px;
+    width: 400px;
+    border-left: none;
+    border-color: #0c1b33;
+}
+
+.searchInput::placeholder {
+    padding: 5px;
+}
+
+/*
+Card area
+*/
+
+.cardArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+
+.cardItem {
+    width: 370px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 30px 10px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.cardImg {
+    width: 100%;
+    height: 260px;
+    cursor: pointer;
+}
+
+.cardText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    z-index: 10;
+}
+
+.cartIconImg {
+    position: relative;
+    bottom: 13px;
+    left: 370px;
+    height: 100px;
+    width: 50px;
+    border-top-left-radius: 10px;
+    background-color: #f9e494;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cartAni:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.itemName,
+.itemPrice {
+    font-size: 20px;
+}
+
+.itemName {
+    margin: 0 0 0 20px;
+}
+
+.itemPrice {
+    margin: 0 20px 0 0;
+}
+
